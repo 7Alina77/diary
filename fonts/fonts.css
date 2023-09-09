@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Akshar';
+  src: url(./Akshar-Bold.ttf) format('ttf');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Akshar';
+  src: url(./Akshar-Regular.ttf) format('ttf');
+  font-weight: 400;
+}
