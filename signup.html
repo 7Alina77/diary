@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <title>Diary</title>
+  <link rel="stylesheet" href="./vendor/normalize.css">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header__overlay">
+        <nav class="header__navigation">
+          <ul class="header__navigation-main">
+            <li class="header__navigation-item"><a class="link" href="#">Вход</a></li>
+            <li class="header__navigation-item"><a class="link" href="./index.html">Главная</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="authorization">
+        <form id="authorization__form" onSubmit={handleSubmitRegister} class='authorization__form'>
+          <div class="authorization__container">
+            <h2 class="authorization__title">Регистрация</h2>
+            <input class='authorization__input'
+              name="name"
+              type="text"
+              placeholder="Ник"
+              onChange={handleChangeRegister}          
+            ></input>
+            <input class='authorization__input'
+              name="email"
+              type="email"
+              placeholder="Email"
+              onChange={handleChangeRegister}          
+            ></input>
+            <input class='authorization__input'
+              name="password"
+              type="password"
+              placeholder="Пароль"
+              onChange={handleChangeRegister}
+            ></input>
+          </div>
+            <button onClick={handleSubmitRegister} form="authorization__form" class="authorization__submit link" type="submit">Зарегистрироваться</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer__signup">
+      <div class="footer__background">
+        <p class="footer__copyright">&copy; Alina Potapchuk 2023</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
